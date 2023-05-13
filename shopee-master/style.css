@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #efefef;
+}
+
+.navigation{
+    padding: 1rem 4%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation ul li input{
+    width: 280px;
+    padding: 10px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.navigation .inputBx{
+    position: relative;
+}
+
+.navigation .inputBx i{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero .card{
+    height: 170px;
+}
+
+.hero .card img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Category */
+.category{
+    padding: 20px;
+    background-color: #fff;
+}
+
+.category .cardWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category .card{
+    width: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
+.category .card .cardText{
+    width: 100%;
+}
+
+.category .card .images,
+.category .card .images img{
+    width: 100%;
+}
+
+.category .card a{
+    text-decoration: none;
+}
+
+.category .card h4{
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* Banner */
+.banner img{
+    width: 100%;
+}
+
+/* Flash */
+.flash{
+    padding: 1rem 3%;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.flash .flashTitle img{
+    width: 100px;
+    margin-right: 7px;
+}
+
+.flash .flashTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flash .flashTitle .title{
+    display: flex;
+    align-items: center;
+}
+
+.flash .flashTitle p span{
+    background-color: #000;
+    color: #fff;
+    padding: 2px;
+    margin-right: 3px;
+    border-radius: 3px;
+}
+
+.flash .flashTitle .view p{
+    font-size: 12px;
+}
+
+.productContent{
+    margin-top: 20px;
+}
+
+.productContent .card{
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+.productContent .card .images
+{
+    width: 100%;
+}
+
+.productContent .card img{
+    width: 200px;
+}
+
+.productContent .card .ribbon{
+    background-color: #d0011b;
+    width: 50px;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.productContent .card .ribbon::before{
+    background-color: #d0011b;
+    height: 45px;
+    width: 6px;
+    left: -5px;
+    top: 0;
+    position:absolute;
+    content: '';
+}
+
+.productContent .card .discount{
+    background-color: yellow;
+    width: 50px;
+    padding: 10px;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.productContent .card .cardText h5{
+    padding: 5px 0;
+    color: red;
+}
+
+.productContent .card .cardText p{
+    background-color: #ffbda6;
+    border-radius: 10px;
+    padding: 2px;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.productContent .card .cardText p::before{
+    content:'';
+    background-color: #ec1d16;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.productContent .card:nth-child(2) .cardText p{
+    background-color: #ffbda6;
+    border-radius: 10px;
+    padding: 2px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.productContent .card:nth-child(2) .cardText p::before{
+    content:'';
+    background-color: #ec1d16;
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.terlaris{
+    background-color: #fff;
+    padding: 1rem 3%;
+    margin-top: 20px;
+}
+
+.terlaris .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terlaris .title h3{
+    color: #ec1d16;
+    font-weight: 400;
+}
+
+.terlaris .title p{
+    color: gray;
+}
+
+.productCategory{
+    margin-top: 10px;
+}
+
+.productCategory .card{
+    width: 110px;
+    text-align: center;
+}
+
+.productCategory .card a{
+    text-decoration: none;
+}
+
+.productCategory .card img{
+    width: 100%;
+}
+
+.productCategory .card h5{
+    color: #000;
+    font-weight: 500;
+}
